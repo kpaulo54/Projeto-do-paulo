@@ -4,18 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Importando as fontes -->
     <style>
         /* Estilos básicos */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Dancing Script', cursive, 'Roboto', sans-serif; /* Usando a fonte Dancing Script */
             background-color: rgb(230, 230, 250);
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: rgb(50, 205, 50); /* Cor aleatória */
-            color: white;
+            background-color: transparent; /* Removendo a cor de fundo */
+            color: black; /* Mudando a cor do texto para garantir a legibilidade */
             text-align: center;
             padding: 20px;
         }
@@ -23,19 +24,32 @@
         section {
             padding: 20px;
             margin: 20px;
-            background-color: rgb(255, 182, 193); /* Cor aleatória */
+            background-color: rgb(255, 182, 193);
             border-radius: 8px;
+            animation: colorChange 10s linear infinite;
+        }
+
+        @keyframes colorChange {
+            0% { background-color: rgb(173, 216, 230); } /* Azul claro */
+            14% { background-color: rgb(255, 0, 0); } /* Vermelho */
+            28% { background-color: rgb(0, 0, 255); } /* Azul */
+            42% { background-color: rgb(0, 255, 0); } /* Verde */
+            57% { background-color: rgb(255, 192, 203); } /* Rosa */
+            71% { background-color: rgb(128, 0, 128); } /* Roxo */
+            85% { background-color: rgb(255, 165, 0); } /* Laranja */
+            100% { background-color: rgb(255, 255, 0); } /* Amarelo */
         }
 
         .projeto {
-            background-color: rgb(173, 216, 230); /* Cor aleatória */
+            background-color: white; /* Mudando o fundo para branco */
             padding: 15px;
             margin: 10px 0;
             border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Adicionando uma leve sombra */
         }
 
         footer {
-            background-color: rgb(255, 69, 0); /* Cor aleatória */
+            background-color: rgb(255, 69, 0);
             text-align: center;
             padding: 10px;
             color: white;
@@ -52,7 +66,7 @@
 
     <section>
         <h2>Sobre Mim</h2>
-        <p>Sou um desenvolvedor web apaixonado por criar experiências digitais incríveis. Aqui estão alguns dos meus projetos.</p>
+        <p>Eu sou Paulo</p>
     </section>
 
     <section>
@@ -69,10 +83,14 @@
             <h3>Projeto 3</h3>
             <p>Um site de portfólio interativo com animações CSS e integração com API.</p>
         </div>
+        <div class="projeto">
+            <h3>Projeto 4</h3>
+            <p>Uma plataforma de blogs onde os usuários podem criar e compartilhar suas histórias, com um sistema de comentários e curadorias.</p>
+        </div>
     </section>
 
     <footer>
-        <p>Contato: dev@example.com | © 2024 Meu Portfólio</p>
+        <p>Contato: dev@paulo.pindziura@escola.pr.gov.br | © 2024 Meu Portfólio</p>
     </footer>
 </body>
 </html>
